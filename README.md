@@ -1,4 +1,6 @@
-# nginx ingress
+# Basic setup of microk8s with nginx ingress and cert-manager
+
+## Mincrok8s
 
 <https://microk8s.io/docs/getting-started>
 1 - microk8s
@@ -30,13 +32,15 @@ microk8s config
 
 wait if you see some warnings.
 
-5 - CRDs cert-manager
+## Nginx + cert-manager
+
+1 - CRDs cert-manager
 
 ```
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.1.1/cert-manager.crds.yaml
 ```
 
-6 - haproxy ingress, cert-manager
+2 - haproxy ingress, cert-manager
 
 ```
 helmfile sync -f ./helmfile/helmfile.yaml -e infra
