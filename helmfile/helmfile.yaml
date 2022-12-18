@@ -5,7 +5,7 @@ environments:
       - rootPath: "../helmfile"
 
 bases:
-  - releases/haproxy.yaml
+  - releases/nginx.yaml
   - releases/cert-manager.yaml
   - releases/cert-manager-issuers.yaml
   - releases/dashboard.yaml
