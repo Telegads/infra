@@ -1,4 +1,5 @@
 releases:
   - name: dashboard
+    namespace: infra
     chart: charts/dashboard
     version: 0.0.1

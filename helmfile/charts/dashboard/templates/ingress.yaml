@@ -13,7 +13,7 @@ spec:
   tls:
   - hosts:
     - kube.nikitin-petr.ru
-    secretName: test
+    secretName: kubernetes-dashboard
   rules:
   - host: kube.nikitin-petr.ru
     http:
@@ -22,7 +22,6 @@ spec:
         pathType: Prefix
         backend:
           service:
-            # name: kuard
             name: kubernetes-dashboard
             port:
               number: 443
