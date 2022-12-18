@@ -1,0 +1,4 @@
+releases:
+  - name: dashboard
+    chart: charts/dashboard
+    version: 0.0.1

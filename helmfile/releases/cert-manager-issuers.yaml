@@ -1,0 +1,7 @@
+releases:
+  - name: cert-manager-issuers
+    namespace: infra
+    chart: charts/cert-manager-issuers
+    version: 0.0.1
+    values:
+      - values/infra/cert-manager.yaml
