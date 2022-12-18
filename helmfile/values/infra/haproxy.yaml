@@ -1,8 +1,0 @@
-controller:
-  ingressClassResource:
-    enabled: true
-    default: true
-  service:
-    type: NodePort
-    externalIPs:
-      - 89.223.126.123
